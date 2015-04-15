@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/loading_screen %>
+    <% include partials/logo %> 
+    <div class="header">
+      <a href="/shop">shop &nbsp|&nbsp 因特</a>
+    </div>
+
+    <div class="yinte_description">
+      <div class="yinte_description_eng">
+        <p>Yinte is about fluid expression. You can finally be you-- whenever you want, wherever you want. Be flexible. Be fluid. Be international.</p>
+        <p>Imagine a world with Yinte technology. Upload yourself wearing Yinte and you become the advertising platform. Get paid for what you wear and who you are. Join Yinte. Join the identity economy.</p>
+      </div><!--
+
+      --><div class="yinte_description_chi">
+        <p>因特是流畅的表达。你终于可以当你－无时无刻。。灵活的，多变的，国际的你。</p> 
+        <p>想象一个拥有因特科技的世界。你上传自己穿着因特的图片，你自身成为一个广告平台。你可以成为任何品牌。加入因特。加入品牌经济。</p>
+
+      </div>
+    </div>
+
+    <div class="advertisement" id="advertisement01">
+      <div class="foo">
+        <!--<img class="advertisement_image" src="/media/advertisement01.png">-->
+        <video class="advertisement_image" id="video" autoplay="" preload="" loop="" class="bgvid section_background" poster="media/advertisement01.png">
+          <source src="media/advertisement01.webm" type="video/webm">
+        </video>
+      </div><!--
+      --><div class="bar">
+        <% include partials/ad_branding %> 
+      </div>
+    </div>
+
+    <div class="advertisement" id="advertisement02">
+      <div class="bar">
+        <% include partials/ad_branding %> 
+      </div><!--
+      --><div class="foo">
+        <!--<img class="advertisement_image" src="/media/advertisement01.png">-->
+        <video class="advertisement_image" id="video" autoplay="" preload="" loop="" class="bgvid section_background" poster="media/advertisement01.png">
+          <source src="media/advertisement02.webm" type="video/webm">
+          <source src="media/advertisement02.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="advertisement" id="advertisement03">
+      <div class="foo">
+        <!--<img class="advertisement_image" src="/media/advertisement01.png">-->
+        <video class="advertisement_image" id="video" autoplay="" preload="" loop="" class="bgvid section_background" poster="media/advertisement01.png">
+          <source src="media/advertisement03.webm" type="video/webm">
+        </video>
+      </div><!--
+      --><div class="bar">
+        <% include partials/ad_branding %> 
+      </div>
+    </div>
+
+    <div class="mobile_bar">
+      <div class="advertisement">
+        <% include partials/ad_branding %> 
+      </div>
+    </div>
+
+    <% include partials/about %><!--
+    --><a href='/shop'><div class="shop">
+      <div class="shop_button">
+        <img class="shop_button_img" src="/media/merchandise_main.png">
+        <div class="shop_button_text">
+          <span class="shop_button_text_eng">merchandise / </span>
+          <span class="shop_button_text_chi">注和讨论 → </span>
+        </div>
+      </div>
+    </div></a>
+
+    <% include partials/footer %>
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/index.js"></script>
+
+  </body>
+</html>

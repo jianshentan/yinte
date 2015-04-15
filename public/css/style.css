@@ -1,0 +1,429 @@
+@font-face { font-family: Sports; src: url('../media/SF_Sports_Night_NS.ttf'); }  
+@font-face { font-family: ChineseSports; src: url('../media/Chinese_Sports.ttf'); }  
+
+body {
+  font-family: "Hind", san-serif;
+  padding: 20px;
+  position: relative;
+  min-width: 920px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  body {
+    padding: 3vw;
+    min-width: 0;
+    max-width: inherit;
+  }
+}
+
+/* header */
+.header {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  top: 20px;
+}
+.header a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .header {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 8vw;
+    text-decoration: underline;
+    color: #888
+  }
+}
+
+/* logo */
+.logo_container {
+  width: 350px;
+  padding: 12px 18px;
+  display: inline-block;
+  -webkit-box-shadow: 5px 5px 5px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    5px 5px 5px 4px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         5px 5px 5px 4px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.logo_image, .logo_text {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo_image {
+  width: 150px; height: 150px;
+}
+.logo_text{
+  padding-top: 15px;
+  padding-left: 10px;
+}
+.logo_text_eng {
+  font-size: 4.0em;
+  font-family: Sports, sans-serif;
+}
+.logo_text_chi {
+  font-size: 3.6em;
+  line-height: 1.0em;
+  font-family: ChineseSports, sans-serif;
+  font-weight: 500;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .logo_container {
+    width: 86vw;
+    padding: 4vw; 
+  }
+  .logo_image {
+    width: 35vw;
+    height: 35vw;
+  }
+  .logo_text {
+    font-size: 3.7vw;
+    padding: 3vw;
+  }
+}
+
+/* description */
+.yinte_description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.yinte_description_eng {
+  display: inline-block;
+  width: 49%;  
+  padding-right: 1%;
+}
+.yinte_description_chi {
+  display: inline-block;
+  width: 49%;  
+  padding-right: 1%;
+  vertical-align: top;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .yinte_description {
+    margin: 2vw 0; 
+  }
+  .yinte_description_eng,
+  .yinte_description_chi {
+    width: 100%;
+  }
+}
+
+/* advertisement */
+.advertisement {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 14px;
+}
+.advertisement:after {
+  padding-top: 0%;
+  display: block;
+  content: '';
+}
+.advertisement .foo {
+  width: 50%;
+  display: inline-block;
+}
+.advertisement_image {
+  width: 100%;
+  height: 100%;
+}
+.advertisement .bar {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  background-color: #e8cda8;
+}
+.advertisement_branding {
+  width: 100%;
+  position: relative;
+}
+.advertisement_logo {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  top: -80px; left: 0; bottom: 0; right: 0;
+}
+.advertisement_logo img {
+  width: 150px;
+  height: 150px;
+}
+.advertisement_logo_text_eng {
+  text-align: center;
+  font-size: 3.0em;
+  font-family: Sports, sans-serif; 
+  color: white;
+}
+.advertisement_logo_text_chi {
+  text-align: center;
+  font-size: 2.6em;
+  line-height: 1.0em;
+  font-family: ChineseSports, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.advertisement .corner {
+  position: absolute;
+}
+.advertisement .corner img {
+  width: 30px;
+  height: 30px;
+}
+.advertisement_corners_tl {
+  top: 20px;
+  left: 20px;
+}
+.advertisement_corners_tr {
+  top: 20px;
+  right: 20px;
+}
+.advertisement_corners_bl {
+  bottom: 20px;
+  left: 20px;
+}
+.advertisement_corners_br {
+  bottom: 20px;
+  right: 20px;
+}
+.mobile_bar {
+  display: none;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .advertisement .foo {
+    width: 100%;
+  }
+  .advertisement .bar {
+    display: none;
+  } 
+  .mobile_bar {
+    display: block;
+  }
+  .mobile_bar .advertisement {
+    background-color: #e8cda8;
+  }
+}
+
+/* about */
+.about {
+  display: inline-block;
+  width: 42%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 40px;
+}
+.about .info {
+  margin: 30px 0 20px 0;
+}
+.about .info .social {
+  margin: 20px 0;
+}
+.about .info .social img {
+  background-color: #aaa;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .about {
+    width: auto !important;
+    padding: 0;
+    margin-top: 6vw;
+  }
+  .about .info .social,
+  .about .info .social_linebreak {
+    display: none;    
+  }
+  .about .logo_container {
+    -webkit-box-shadow: 5px 5px 5px 4px #fff;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    5px 5px 5px 4px #fff;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         5px 5px 5px 4px #fff;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  }
+  .about .info {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+/* shop */
+.shop {
+  display: inline-block;
+  vertical-align: top;
+  width: 42%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 40px;
+}
+.shop:after {
+  padding-top: 1%;
+  display: block;
+  content: '';
+}
+.shop .shop_button {
+  text-align: center;
+  padding: 20px 0;
+}
+.shop .shop_button img {
+  width: 100%;
+}
+.shop .shop_button .shop_button_text {
+  color: #aaa;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .shop {
+    width: 100%;
+    padding: 0;
+    margin-top: 6vw;
+  }
+
+}
+
+/* yinte_concept */
+.yinte_concept {
+  display: inline-block;
+  vertical-align: top;
+  width: 42%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 40px;
+}
+.yinte_concept:after {
+  padding-top: 1%;
+  display: block;
+  content: '';
+}
+.yinte_concept_img {
+  background-image: url( "../media/advertisement01.png" ); 
+  background-size: cover;
+  width: 100%;
+}
+.yinte_concept_text {
+  text-align: center;
+  color: #aaa;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .yinte_concept {
+    padding: 0;
+    margin: 6vw 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+  .yinte_concept_img {
+    width: 80vw;
+  } 
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+footer .social_media {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+footer .social_media a {
+  text-decoration: none;
+  color: black;
+}
+footer .copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+footer .copyright img {
+  width: 20px; height: 20px;
+  line-height: 1.0em;
+  vertical-align: top;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  footer {
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+    font-size: 3.5vw; 
+  }
+  footer .copyright img {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+}
+
+/* merch */
+.merchandise {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 22px;
+}
+.merchandise.left { margin-right: 1%; }
+.merchandise.right { margin-left: 1%; }
+.merchandise:before {
+  padding-top: 10%;
+  display: block;
+  content: '';
+}
+.merchandise:after {
+  padding-top: 10%;
+  display: block;
+  content: '';
+}
+.merchandise_img {
+  width: 80%;
+  height: auto;
+}
+.merchandise_info {
+  margin-top: 20px;
+  color: #888;
+}
+.merch_corner {
+  position: absolute;
+}
+.merch_corner img {
+  width: 30px;
+  height: 30px;
+}
+.merch_corner_tl {
+  top: 20px;
+  left: 20px;
+}
+.merch_corner_tr {
+  top: 20px;
+  right: 20px;
+}
+.merch_corner_bl {
+  bottom: 20px;
+  left: 20px;
+}
+.merch_corner_br {
+  bottom: 20px;
+  right: 20px;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .merchandise {
+    width: 100%;
+    margin-top: 6vw;
+    margin-bottom: 0vw;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* loader */
+.loading_overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+}
