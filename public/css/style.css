@@ -6,14 +6,15 @@ body {
   padding: 20px;
   position: relative;
   min-width: 920px;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1180px;
+  margin: 20px auto 0 auto;
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   body {
     padding: 3vw;
     min-width: 0;
     max-width: inherit;
+    margin: 0 auto;
   }
 }
 
@@ -118,7 +119,7 @@ body {
   width: 100%;
   display: inline-block;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 36px;
 }
 .advertisement:after {
   padding-top: 0%;
@@ -131,7 +132,6 @@ body {
 }
 .advertisement_image {
   width: 100%;
-  height: 100%;
 }
 .advertisement .bar {
   width: 50%;
@@ -283,7 +283,6 @@ body {
     padding: 0;
     margin-top: 6vw;
   }
-
 }
 
 /* yinte_concept */
@@ -426,4 +425,7 @@ footer .copyright img {
   height: 100vh;
   background-color: white;
   z-index: 1000;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
 }

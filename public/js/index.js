@@ -1,6 +1,6 @@
 function setBrandingHeight() {
-  var adImage = $( ".advertisement_image" );
   $( ".advertisement_branding" ).each( function() {
+    var adImage = $( this ).parent().parent().find( '.advertisement_image' );
     $( this ).css( "height", adImage.height() + "px" );
   });
 }
